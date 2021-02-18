@@ -6,19 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../front_init/imagens/favicon.ico" type="image/x-icon">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
         body {
             background: #731ba7;
             color: #fff;
+            font-family: 'Roboto', sans-serif;
         }
+        header {
+            padding: 32px;
+            border-bottom: 1px solid #9445c2;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        header div{
+            text-align: center;
+        }
+        header div a {
+            color: white;
+            font-size: 1.4rem;
+            line-height: 32px;
+            margin: 0 16px;
+            text-decoration: none;
+        }
+        header div a:hover {
+            color: #f1e754;
+            transition: color 600ms;
+        }
+
+        
     </style>
 
     <title>Pedro Neves</title>
 </head>
 
 <body>
-    <a href="#"> Sobre</a>
+
+    <header>
+        <div class="links">
+           <a href="#"> Sobre</a>
+           <a href="#"> Aulas</a> 
+        </div>
+        
+    </header>
+    
 </body>
 
 </html>
