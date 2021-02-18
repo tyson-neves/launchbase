@@ -11,31 +11,34 @@ const usuarios = [
 
     {
       nome: "Erick",
-      tecnologias: ["PhP", "Python", "React"]  
+      tecnologias: ["PhP", "Python", "React", "CSS"]  
     }
 ];
 
-// for(let i = 0; i < usuarios.length; i++) {
-   
-//     if(i == 0) { 
-//         console.log(`${usuarios[0].nome} trabalha com ${usuarios[0].tecnologias[0]}, ${usuarios[0].tecnologias[1]}`);
-// } else if(i == 1) {
-//     console.log(`${usuarios[1].nome} trabalha com ${usuarios[1].tecnologias[0]}, ${usuarios[1].tecnologias[1]}`);
-// } else if(i == 2) {
-//     console.log(`${usuarios[2].nome} trabalha com ${usuarios[2].tecnologias[0]}, ${usuarios[2].tecnologias[1]}`);
-// }
 
-// }
-
-
-function checarUsuarioUsaCSS(usuario) {
-    if(usuario == "CSS") {
-      return  true
-    } else
-     return false
-    
+for(let usuario of usuarios) {
+  console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(", ")}`)
 }
 
-const usuarioCSS = checarUsuarioUsaCSS(usuarios.length);
+// for(let i = 0; i < usuarios.length; i++) {
+//    console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias.join(", ")}  `) // join adiciona uma string entre as propriedades.
+// }
 
-console.log(usuarioCSS);
+// Busca por tecnologia 
+
+function checarUsuarioUsaCSS(usuario) {
+  for(let tecnologia of usuario.tecnologias) {
+    if (tecnologia == "CSS") {
+      return true   
+    }
+  }
+  return false
+}
+
+for (let i = 0; i < usuarios.length; i++) {
+  const usuarioTrabalhaComCSS = checarUsuarioUsaCSS(usuarios[i]);
+
+  if(usuarioTrabalhaComCSS) {
+    console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`);
+  }
+}
