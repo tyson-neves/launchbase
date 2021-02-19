@@ -1,18 +1,24 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 
 *{
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
+
+html {
+    font-size: 10px;
+}
+
 body {
     background: #731ba7;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 header {
-    padding: 32px;
+    padding: 3.2rem;
     border-bottom: 1px solid #9445c2;
     background: rgba(0, 0, 0, 0.2);
 }
@@ -21,9 +27,9 @@ header div{
 }
 header div a {
     color: white;
-    font-size: 1.4rem;
-    line-height: 32px;
-    margin: 0 16px;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin: 0 1.6rem;
     text-decoration: none;
 }
 header div a:hover {
@@ -33,11 +39,32 @@ header div a:hover {
 
 #wrapper {
     text-align: center;
-    padding: 32px;
+    padding: 3.2rem;
 
 } 
 #wrapper img {
     border-radius: 50%;
     border: 5px solid #f1e754;
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
+}
+
+#wrapper h1 {
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    font-weight: bold;
+}
+
+#wrapper h2 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-weight: normal;
+    margin-top: .8rem;
+    opacity: .8;   
+}
+
+#wrapper p {
+    max-width: 50rem;
+    margin: 3.2rem auto;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
 }
