@@ -3,6 +3,7 @@
 :root {
     --color-yellow: #f1e754;
     --color-light-yellow: #f5ee93;
+    --color-rocket: #7159c1;
 }
 
 *{
@@ -90,3 +91,39 @@ header {
 
 /* ============== CARDS ==============*/
 
+.cards {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.card {
+    background-color: var(--color-rocket);
+
+}
+
+.card_image-container img {
+    width: 100%;
+}
+.card_content p {
+    font-size: 1.6rem;
+}
+.card_info {
+    font-size: 1.4rem;
+}
+.card_content, .card_info {
+    padding: 1.8rem;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card_price {
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
