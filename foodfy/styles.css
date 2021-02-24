@@ -20,7 +20,7 @@ body {
 /* ================= HEADER ================= */
 
 .header {
-    width: 94rem;
+    max-width: 94rem;
     margin: 4rem auto;
     position: relative;
 }
@@ -43,10 +43,9 @@ body {
     font-size: 1.6rem;
     text-decoration: none;
     color:#111111;
-    padding: 2rem;
-
+    padding: 1rem;
+    
 }
-
 
 /* ================= BANNER ================= */
 
@@ -80,5 +79,64 @@ body {
     position: absolute;
     right: 12rem;
     bottom: 0;
+}
+
+
+/* ================= MAIS ACESSADAS  ================= */
+
+.mais_acessadas_container {
+    max-width: 94rem;
+    margin: 0 auto;
+}
+.mais_acessadas {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.mais_acessadas h2 {
+    font-size: 2.4rem;
+    color: #111;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.card-image img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.card_description {
+    font-size: 1.8rem;
+    color: #111111;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.creator {
+    font-size: 1.4rem;
+    color: #777777;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer_content {
+    width: 100%;
+    height: 6.2rem;
+    background-color: #eee;
+    margin-top: 5rem;
+
+}
+
+.footer-text {
+    font-size: 1.4rem;
+    color: #999;
+    text-align: center;
+    padding-top: 2.5rem;
+    
 }
 
