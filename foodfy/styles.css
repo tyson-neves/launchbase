@@ -44,7 +44,10 @@ body {
     text-decoration: none;
     color:#111111;
     padding: 1rem;
-    
+}
+
+.active {
+    font-weight: bold;
 }
 
 /* ================= BANNER ================= */
@@ -140,3 +143,53 @@ body {
     
 }
 
+
+
+
+/* ================= SOBRE ================= */
+
+
+
+.container {
+    width: 94rem;
+    margin: 0 auto;
+}
+
+.about-foodfy  {
+    margin-bottom: 2rem;
+}
+.about-foodfy h1 {
+    font-size: 2.4rem;
+    color: #111111;
+    font-weight: bold;
+}
+.about-text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #444;
+    margin-bottom: 3rem;
+}
+
+.how-started  h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 2rem;
+}
+.how-text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #444;
+    margin-bottom: 3rem;
+}
+
+.our-recipes h2{
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 2rem;
+}
+.our-text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #444;
+    margin-bottom: 3rem;
+}
