@@ -204,7 +204,7 @@ body {
     height: 100%;
     position: fixed;
     top: 0;
-    opacity: 0;
+    /* opacity: 0; */
     visibility: hidden;
 }
 .modal {
@@ -216,6 +216,7 @@ body {
     border-radius: 1.6rem;
     position: relative;
     padding: 3rem;
+    
 }
 
 .modal .btn-close {
@@ -234,7 +235,7 @@ body {
     height: 20rem;
     object-fit: cover;
     border-radius: 1.5rem;
-
+    cursor: auto;
     margin-bottom: 2rem;    
 }
 .content-modal .card h4 {
@@ -242,6 +243,8 @@ body {
     line-height: 2.8rem;
     color: #111;
     text-align: center;
+    cursor: auto;
+
 }
 .content-modal .card p {
     font-size: 1.6rem;
@@ -250,6 +253,7 @@ body {
     text-align: center;
     font-weight: normal;
     margin-top: .5rem;
+    cursor: auto;
 }
 
 
