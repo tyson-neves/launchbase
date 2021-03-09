@@ -18,14 +18,14 @@ html {
 }
 
 body {
-    background: #731ba7;
+    background: #28093a;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 header {
     padding: 3.2rem;
-    border-bottom: 1px solid #9445c2;
+    border-bottom: 1px solid #51226d;
     background: rgba(0, 0, 0, 0.2);
 }
 .links{
