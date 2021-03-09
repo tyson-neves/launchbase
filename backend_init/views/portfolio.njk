@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% block content %}
 
@@ -15,83 +15,21 @@
     </div>
 
     <section class="cards">
-        <div class="card" id="GykTLqODQuU">
-            <div class="card_image-container">
-                <img src="imagens/formulario.jpg" alt="video aula">
-            </div>
-            <div class="card_content">
-                <p>Formulário animado com JS puro e CSS Animation</p>
-            </div>
-            <div class="card_info">
-                <p>57 min</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
 
-        <div class="card" id="UftSB4DaRU4">
+        {% for item in items %}
+        <div class="card" id="{{item.id}}">
             <div class="card_image-container">
-                <img src="imagens/domObject.jpg" alt="video aula">
+                <img src="{{item.image}}" alt="Imagem de {{item.title}}">
             </div>
             <div class="card_content">
-                <p>Manipulação de DOM com JavaScript, do zero, na prática | Masterclass #18</p>
+                <p>{{item.title}}</p>
             </div>
             <div class="card_info">
-                <p>24 min</p>
-                <p class="card_price">Free</p>
+                <p>{{item.duration}}</p>
+                <p class="card_price">{{item.price}}</p>
             </div>
         </div>
-
-        <div class="card" id="DDm0M_rZLJo">
-            <div class="card_image-container">
-                <img src="imagens/cloneNu.jpg" alt="video aula">
-            </div>
-            <div class="card_content">
-                <p>Clonando interface do Nubank (+ ANIMAÇÕES) com React Native</p>
-            </div>
-            <div class="card_info">
-                <p>33 min</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="BaI8dHUthLA">
-            <div class="card_image-container">
-                <img src="imagens/cssSass.jpg" alt="video aula">
-            </div>
-            <div class="card_content">
-                <p>Dê super poderes ao CSS com SASS | Masterclass #15</p>
-            </div>
-            <div class="card_info">
-                <p>45 min</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="Szv-gA5Aejg">
-            <div class="card_image-container">
-                <img src="imagens/oqAprender.jpg" alt="video aula">
-            </div>
-            <div class="card_content">
-                <p>Ferramentas, linguagens e tecnologias para ficar de olho em 2021 | PR #26</p>
-            </div>
-            <div class="card_info">
-                <p>27 min</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="cZvWDTqTGKg">
-            <div class="card_image-container">
-                <img src="imagens/pinterest.jpg" alt="video aula">
-            </div>
-            <div class="card_content">
-                <p>Masonry GRID - NOVA FEATURE do CSS 2020 | Code/Drops#67</p>
-            </div>
-            <div class="card_info">
-                <p>59 min</p>
-                <p class="card_price">Free</p>
-            </div>
-        </div>
+        {% endfor%}
 
     </section>
 
