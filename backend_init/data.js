@@ -5,6 +5,7 @@ module.exports = [
         image: 'imagens/formulario.jpg',
         duration: '57 min',
         price: 'Free',
+        featured: true,
     },
 
     {
@@ -29,6 +30,7 @@ module.exports = [
         image: 'imagens/cssSass.jpg',
         duration: '45 min',
         price: 'Free',
+        featured: true,
     },
 
     {
@@ -45,5 +47,6 @@ module.exports = [
         image: 'imagens/pinterest.jpg',
         duration: '59 min',
         price: 'Free',
+        featured: true,
     },
 ]
